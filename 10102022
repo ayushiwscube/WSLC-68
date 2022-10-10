@@ -1,0 +1,79 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost", user="root", password="12345", database="college")
+cur = mydb.cursor()
+
+get_data = """select name,branch,city from students
+where branch not in ("eee")"""
+cur.execute(get_data)
+data = cur.fetchall()
+
+for i in data:
+    print(i)
+
+
+
+# import mysql.connector
+#
+# mydb = mysql.connector.connect(host="localhost", user="root", password="12345", database="college")
+# cur = mydb.cursor()
+#
+# get_data = "select count(*),branch from students group by branch"
+# cur.execute(get_data)
+# data = cur.fetchall()
+#
+# for i in data:
+#     print(i)
+
+
+# import mysql.connector
+#
+# mydb = mysql.connector.connect(host="localhost", user="root", password="12345", database="college")
+# cur = mydb.cursor()
+#
+# get_data = "select sum(fees) from fee_deposit"
+#
+# cur.execute(get_data)
+# data = cur.fetchall()
+#
+# print(data)
+
+
+# import mysql.connector
+#
+# mydb = mysql.connector.connect(host="localhost", user="root", password="12345", database="college")
+# cur = mydb.cursor()
+#
+# get_data = """SELECT \
+# students.name AS name,\
+# students.roll_no AS roll_no,\
+# fee_deposit.fees AS fees \
+# FROM students \
+# LEFT JOIN fee_deposit
+# ON students.roll_no = fee_deposit.roll_no"""
+#
+# cur.execute(get_data)
+# data = cur.fetchall()
+#
+# for i in data:
+#     print(i)
+
+
+
+# import mysql.connector
+#
+# mydb = mysql.connector.connect(host="localhost", user="root", password="12345", database="college")
+# cur = mydb.cursor()
+# #Equi Join
+# get_data = """select
+# students.name as name,
+# students.roll_no as roll_no,
+# fee_deposit.fees as fees
+# from students,fee_deposit
+# where students.roll_no = fee_deposit.roll_no"""
+#
+# cur.execute(get_data)
+# data = cur.fetchall()
+
+# for i in data:
+#     print(i)
