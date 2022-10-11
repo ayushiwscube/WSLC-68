@@ -1,0 +1,66 @@
+import tkinter as tk
+import random
+window = tk.Tk()
+window.geometry("650x480")
+window.title("mini game")
+
+words = ["ironman","hawkeye","wanda","vision"]
+
+word = random.choice(words)
+# print(word)
+jumble = "".join(random.sample(word, len(word)))
+
+def click():
+    a = str(e.get()).lower()
+    if a == word:
+        l3 = tk.Label(window,text="correct").pack()
+    else:
+        l3 = tk.Label(window, text="incorrect").pack()
+
+# print(jumble)
+l = tk.Label(window,text=jumble, font = "Time 20 bold").pack()
+l1 = tk.Label(window,text="guess the word").pack()
+
+e = tk.Entry(window)
+b = tk.Button(window,text = "enter",command=click).pack()
+e.pack()
+window.mainloop()
+
+
+# import tkinter as tk
+#
+# window = tk.Tk()
+# window.geometry("650x480")
+# window.title("add numbers")
+#
+# def click():
+#     a = int(e1.get())
+#     b = int(e2.get())
+#     l3 = tk.Label(window,text= a*b,font="Times 16 bold").place(x = 280, y = 200)
+#
+#
+# l1 = tk.Label(window,text="enter number 1 here: ",font="Times 16 bold").place(x = 80, y = 50)
+# l2 = tk.Label(window,text="enter number 2 here: ",font="Times 16 bold").place(x = 400, y = 50)
+#
+# e1 = tk.Entry(window)
+# e2 = tk.Entry(window)
+#
+# b = tk.Button(window,text="click",font="Times 16 bold",command=click).place(x = 280, y = 120)
+# e1.place(x = 80, y = 80)
+# e2.place(x = 400, y = 80)
+# window.mainloop()
+
+
+# import tkinter as tk
+#
+# window = tk.Tk()
+# window.geometry("250x320")
+# window.title("Hello")
+#
+# def click():
+#     l1 = tk.Label(window,text = "button clicked").place(x = 80, y = 150)
+#
+# l = tk.Label(window,text="wscube tech",bg = "#76187a", fg = "white",font = "Times 38 bold").place(x = 10, y = 20)
+# b = tk.Button(window,text="enter",command=click).place(x = 80, y = 100)
+# e = tk.Entry(window).place(x = 80,y = 120)
+# window.mainloop()
