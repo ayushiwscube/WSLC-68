@@ -1,0 +1,51 @@
+
+# from tkinter import *
+#
+# window = Tk()
+# var = IntVar()
+# def click():
+#     v = "you have selected option" +str(var.get())
+#     label =Label(window,text=v).pack()
+#
+#
+# l1 = Label(window,text = "what is the capital of India?").pack()
+# R1 = Radiobutton(window,text = "Mumbai",variable= var, value=1, command= click)
+#
+# R2 = Radiobutton(window,text= "New Delhi",variable= var,value=2, command=click)
+#
+# R3 = Radiobutton(window,text="Varanasi",variable=var, value = 3, command=click)
+#
+# R4 = Radiobutton(window, text="Bangalore",variable= var, value=4, command= click)
+#
+# R1.pack()
+# R2.pack()
+# R3.pack()
+# R4.pack()
+#
+# window.mainloop()
+
+
+# import tkinter
+# from tkinter import *
+#
+# window = Tk()
+# #tkinter variables
+# iv = IntVar(window,name = "int")
+# sv = StringVar(window,name="string")
+# bv = BooleanVar(window, name = "bool")
+# dv = DoubleVar(window,name="floor")
+#
+# #tkinter set function
+# window.setvar(name="int",value=100)
+# window.setvar(name="string",value="abc")
+# window.setvar(name="bool",value=True)
+# window.setvar(name="float",value=1.23)
+#
+# #tkinter get function
+# a = (iv.get())
+# print(sv.get())
+# print(bv.get())
+# b = (dv.get())
+#
+# l = tkinter.Label(window,text = a+b ).pack()
+# window.mainloop()
