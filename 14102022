@@ -1,0 +1,147 @@
+# import matplotlib.pyplot as plt
+#
+# x = [1,2,3,4,5]
+# y = [3,5,3,5,8]
+# plt.subplot(2,2,1)
+# plt.plot(x,y)
+#
+#
+# x1 = [1,2,3,4,5]
+# y1 = [3,5,2,8,3]
+# plt.subplot(2,2,2)
+# plt.bar(x1,y1)
+#
+# x2 = [1,2,3,4,5]
+# y2 = [3,5,2,8,3]
+# plt.subplot(2,2,3)
+# plt.bar(x2,y2)
+#
+# x3 = [1,2,3,4,5]
+# y3 = [3,5,2,8,3]
+# plt.subplot(2,2,4)
+# plt.bar(x3,y3)
+#
+# plt.show()
+
+
+
+
+# import matplotlib.pyplot as plt
+# x = [1,2,3,4,5]
+# y = [45,20,50,35,42]
+# plt.stem(x,y, markerfmt = "D")
+# plt.show()
+
+
+
+
+
+# import matplotlib.pyplot as plt
+#
+# x = [1,6,3,5,8,4,7,9,5,3,2]
+#
+# plt.hist(x, histtype= "bar")
+# plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+# import matplotlib.pyplot as plt
+#
+# x = [1,2,3,4,5]
+# y = [45,67,27,48,66]
+# y1 = [49,24,67,89,45]
+#
+# plt.plot(x,y, label = "men")
+# plt.plot(x,y1, label = "women")
+# plt.legend(loc = 2)
+# plt.show()
+
+
+
+
+
+
+
+
+# import matplotlib.pyplot as plt
+#
+# x = [35,10,30,25]
+# Labels = ["Apple","Nokia","Oneplus","Mi"]
+# exp = [0,0.2,0,0.5]
+# c = ["red","pink","magenta","hotpink"]
+# plt.pie(x,labels = Labels,autopct= "%1i%%",colors = c, startangle = 180, explode= exp,shadow = True)
+# plt.legend()
+# plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+#
+# x = [1,2,3,4,5]
+# y = [70,47,59,37,88]
+# colors = np.array([0,10,20,30,40])
+# plt.scatter(x,y,c= colors, cmap = 'viridis',marker = "*")
+# plt.colorbar()
+# plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+#
+# x = np.arange(5)
+# y = [[30,40,35,60,42],
+#      [45,67,30,40,60]]
+# plt.xlabel("Days",fontsize = 15)
+# plt.ylabel("Number of People",fontsize = 15)
+# plt.title("Data of a Restaurant",fontsize = 17)
+# fig = plt.figure()
+# ax = fig.add_axes([0,0,1,1])
+# ax.bar(x, y[0],color = "blue",width = 0.3, label = "men")
+# ax.bar(x + 0.3, y[1],color = "pink",width = 0.3, label = "women")
+# plt.legend()
+# #colors = ["magenta","hotpink"]
+# #plt.bar(x,y, color = colors,edgecolor ="black", linewidth = 2, linestyle = "-.",alpha = 0.5)
+# plt.show()
