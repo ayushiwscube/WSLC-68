@@ -67,8 +67,9 @@ press 4 to view data
 # conn = sqlite3.connect("student_data.db")
 # cur = conn.cursor()
 #
-# get_data = cur.execute("""SELECT * FROM STUDENTS WHERE GRADE = "8th" and ROLL_NO = 2 """)
+# get_data = cur.execute("""SELECT * FROM STUDENTS WHERE GRADE = "8th" and ROLL_NO = "%s" """)
 #
+# cur.execute(get_data, roll_no)
 # for i in get_data:
 #     print(i)
 #
